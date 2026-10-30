@@ -1,0 +1,44 @@
+[
+  {
+    "case": "normal",
+    "status": "completed",
+    "model_calls": 6,
+    "evidence_checked": true
+  },
+  {
+    "case": "revised",
+    "status": "completed",
+    "model_calls": 8,
+    "evidence_checked": true
+  },
+  {
+    "case": "tool_failure",
+    "status": "completed",
+    "model_calls": 10,
+    "evidence_checked": true
+  },
+  {
+    "case": "no_material",
+    "status": "incomplete",
+    "model_calls": 5,
+    "evidence_checked": true
+  },
+  {
+    "case": "missing",
+    "status": "needs_input",
+    "model_calls": 0,
+    "evidence_checked": true
+  },
+  {
+    "case": "impossible",
+    "status": "incomplete",
+    "model_calls": 5,
+    "evidence_checked": true
+  },
+  {
+    "case": "changed_materials",
+    "status": "completed",
+    "model_calls": 13,
+    "evidence_checked": true
+  }
+]

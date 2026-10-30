@@ -1,0 +1,240 @@
+{
+  "mode": "real",
+  "model": "deepseek-flash",
+  "status": "incomplete",
+  "error": null,
+  "input": {
+    "theme": "火星旅行",
+    "audience": "新手创作者",
+    "platform": "短视频",
+    "target_seconds": 30,
+    "style": "简洁"
+  },
+  "execution": {
+    "started_at_utc": "2026-10-30T09:23:22.302962+00:00",
+    "max_steps": 16,
+    "decisions": 5,
+    "protocol": "native_function_calls",
+    "tool_calls": 4,
+    "fail_once": null,
+    "fail_always": null,
+    "endpoint": "https://api.deepseek.com",
+    "model_calls": [
+      {
+        "response_id": "0877a0ed-9639-46a4-ac4a-80dc7bf49741",
+        "served_model": "deepseek-flash",
+        "finish_reason": "tool_calls",
+        "usage": {
+          "prompt_tokens": 1247,
+          "completion_tokens": 63,
+          "total_tokens": 1310,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024
+          },
+          "prompt_cache_hit_tokens": 1024,
+          "prompt_cache_miss_tokens": 223
+        },
+        "action_content": [
+          {
+            "name": "search",
+            "arguments": "{\"query\": \"火星旅行 产品功能 演示\", \"reason\": \"Need source facts for the Mars travel product demo before drafting.\"}"
+          }
+        ],
+        "executed_call_index": 0,
+        "unexecuted_call_count": 0
+      },
+      {
+        "response_id": "c56f8724-afb9-4cb1-ae61-f12eb94b96fd",
+        "served_model": "deepseek-flash",
+        "finish_reason": "tool_calls",
+        "usage": {
+          "prompt_tokens": 1312,
+          "completion_tokens": 70,
+          "total_tokens": 1382,
+          "prompt_tokens_details": {
+            "cached_tokens": 1152
+          },
+          "prompt_cache_hit_tokens": 1152,
+          "prompt_cache_miss_tokens": 160
+        },
+        "action_content": [
+          {
+            "name": "search",
+            "arguments": "{\"reason\": \"First search for Mars travel product demo returned no materials; retry once with different query.\", \"query\": \"火星旅行 产品功能 新手创作者\"}"
+          }
+        ],
+        "executed_call_index": 0,
+        "unexecuted_call_count": 0
+      },
+      {
+        "response_id": "4ecb5f2a-5579-4a52-8c49-0c2244877e99",
+        "served_model": "deepseek-flash",
+        "finish_reason": "tool_calls",
+        "usage": {
+          "prompt_tokens": 1384,
+          "completion_tokens": 66,
+          "total_tokens": 1450,
+          "prompt_tokens_details": {
+            "cached_tokens": 1152
+          },
+          "prompt_cache_hit_tokens": 1152,
+          "prompt_cache_miss_tokens": 232
+        },
+        "action_content": [
+          {
+            "name": "search",
+            "arguments": "{\"reason\": \"Two prior searches returned empty; final request for Mars travel product facts before drafting.\", \"query\": \"火星旅行 产品功能说明\"}"
+          }
+        ],
+        "executed_call_index": 0,
+        "unexecuted_call_count": 0
+      },
+      {
+        "response_id": "7aebdf9b-9e82-49ba-946d-e82e0ed7da21",
+        "served_model": "deepseek-flash",
+        "finish_reason": "tool_calls",
+        "usage": {
+          "prompt_tokens": 1452,
+          "completion_tokens": 66,
+          "total_tokens": 1518,
+          "prompt_tokens_details": {
+            "cached_tokens": 1280
+          },
+          "prompt_cache_hit_tokens": 1280,
+          "prompt_cache_miss_tokens": 172
+        },
+        "action_content": [
+          {
+            "name": "search",
+            "arguments": "{\"reason\": \"Three prior searches returned empty; requesting available product facts before drafting.\", \"query\": \"产品功能 演示 可用素材 事实\"}"
+          }
+        ],
+        "executed_call_index": 0,
+        "unexecuted_call_count": 0
+      },
+      {
+        "response_id": "ef38d534-9410-472b-8bcf-5b31918f7496",
+        "served_model": "deepseek-flash",
+        "finish_reason": "tool_calls",
+        "usage": {
+          "prompt_tokens": 1520,
+          "completion_tokens": 60,
+          "total_tokens": 1580,
+          "prompt_tokens_details": {
+            "cached_tokens": 1280
+          },
+          "prompt_cache_hit_tokens": 1280,
+          "prompt_cache_miss_tokens": 240
+        },
+        "action_content": [
+          {
+            "name": "finish",
+            "arguments": "{\"reason\": \"Four searches for Mars travel product facts returned zero materials, so no source IDs exist to write narration; stopping with incomplete status rather than inventing facts.\"}"
+          }
+        ],
+        "executed_call_index": 0,
+        "unexecuted_call_count": 0
+      }
+    ]
+  },
+  "result": {
+    "title": "产品功能演示",
+    "audience": "新手创作者",
+    "platform": "短视频",
+    "style": "简洁",
+    "editorial_brief": {
+      "chars_per_second": 3.5,
+      "frame": "9:16",
+      "preferred_visual": "操作演示",
+      "reading_note": "逐项展示，字幕留出阅读时间",
+      "editing_note": "干净切换，突出单一功能",
+      "title": "产品功能演示",
+      "initial_hold_seconds": 8,
+      "max_hold_seconds": 10,
+      "desired_fill_ratio": 0.9,
+      "allowed_visuals": [
+        "产品画面",
+        "字幕展示",
+        "操作演示"
+      ],
+      "voiceover_method": "按字符数粗估，未实际配音"
+    },
+    "scenes": [],
+    "source_ids": [],
+    "sources": [],
+    "duration_check": null,
+    "rule_check": null,
+    "revisions": [],
+    "tool_errors": [],
+    "warnings": [],
+    "gaps": [
+      "需要可检索的产品事实或素材来源"
+    ],
+    "unfinished_reason": "需要可检索的产品事实或素材来源",
+    "task_status": "incomplete"
+  },
+  "trace": [
+    {
+      "action": "search",
+      "args": {
+        "query": "火星旅行 产品功能 演示"
+      },
+      "observation": {
+        "materials": [],
+        "ok": true
+      },
+      "reason": "Need source facts for the Mars travel product demo before drafting.",
+      "step": 1,
+      "unexecuted_calls": []
+    },
+    {
+      "action": "search",
+      "args": {
+        "query": "火星旅行 产品功能 新手创作者"
+      },
+      "observation": {
+        "materials": [],
+        "ok": true
+      },
+      "reason": "First search for Mars travel product demo returned no materials; retry once with different query.",
+      "step": 2,
+      "unexecuted_calls": []
+    },
+    {
+      "action": "search",
+      "args": {
+        "query": "火星旅行 产品功能说明"
+      },
+      "observation": {
+        "materials": [],
+        "ok": true
+      },
+      "reason": "Two prior searches returned empty; final request for Mars travel product facts before drafting.",
+      "step": 3,
+      "unexecuted_calls": []
+    },
+    {
+      "action": "search",
+      "args": {
+        "query": "产品功能 演示 可用素材 事实"
+      },
+      "observation": {
+        "materials": [],
+        "ok": true
+      },
+      "reason": "Three prior searches returned empty; requesting available product facts before drafting.",
+      "step": 4,
+      "unexecuted_calls": []
+    },
+    {
+      "step": 5,
+      "action": "finish",
+      "args": {},
+      "reason": "Four searches for Mars travel product facts returned zero materials, so no source IDs exist to write narration; stopping with incomplete status rather than inventing facts.",
+      "unexecuted_calls": [],
+      "observation": {
+        "status": "incomplete"
+      }
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "mode": "mock",
+  "model": null,
+  "status": "completed",
+  "error": null,
+  "input": {
+    "theme": "字幕产品",
+    "audience": "新手创作者",
+    "platform": "短视频",
+    "target_seconds": 30,
+    "style": "简洁"
+  },
+  "execution": {
+    "started_at_utc": "2026-10-30T09:24:49.388344+00:00",
+    "max_steps": 16,
+    "decisions": 5,
+    "protocol": "offline_simulation",
+    "tool_calls": 4,
+    "fail_once": null,
+    "fail_always": null,
+    "endpoint": null,
+    "model_calls": []
+  },
+  "result": {
+    "title": "产品功能演示",
+    "audience": "新手创作者",
+    "platform": "短视频",
+    "style": "简洁",
+    "editorial_brief": {
+      "chars_per_second": 3.5,
+      "frame": "9:16",
+      "preferred_visual": "操作演示",
+      "reading_note": "逐项展示，字幕留出阅读时间",
+      "editing_note": "干净切换，突出单一功能",
+      "title": "产品功能演示",
+      "initial_hold_seconds": 8,
+      "max_hold_seconds": 10,
+      "desired_fill_ratio": 0.9,
+      "allowed_visuals": [
+        "产品画面",
+        "字幕展示",
+        "操作演示"
+      ],
+      "voiceover_method": "按字符数粗估，未实际配音"
+    },
+    "scenes": [
+      {
+        "source_id": "P01",
+        "narration": "先看字幕功能：这款产品支持字幕。",
+        "visual": "操作演示",
+        "hold_seconds": 8,
+        "index": 1,
+        "estimated_seconds": 12.57,
+        "start_seconds": 0,
+        "end_seconds": 12.57,
+        "caption": "支持字幕",
+        "source_version": "2026-10-01",
+        "source_quote": "支持字幕",
+        "shot_note": "9:16；逐项展示，字幕留出阅读时间；干净切换，突出单一功能"
+      }
+    ],
+    "source_ids": [
+      "P01"
+    ],
+    "sources": [
+      {
+        "id": "P01",
+        "tags": [
+          "字幕",
+          "剪辑",
+          "产品"
+        ],
+        "fact": "支持字幕",
+        "approved_lines": [
+          "先看字幕功能：这款产品支持字幕。"
+        ],
+        "version": "2026-10-01"
+      }
+    ],
+    "duration_check": {
+      "ok": true,
+      "script_hash": "cf4d6c81d1af6750c857f3495e35847de95550fcdc740ce22d2f883749ff7893",
+      "scene_seconds": [
+        12.57
+      ],
+      "spoken_seconds": [
+        4.57
+      ],
+      "chars_per_second": 3.5,
+      "total_seconds": 12.57,
+      "target_seconds": 30,
+      "overrun_seconds": 0,
+      "recommended_hold_total": 22.43,
+      "within_limit": true
+    },
+    "rule_check": {
+      "ok": true,
+      "script_hash": "cf4d6c81d1af6750c857f3495e35847de95550fcdc740ce22d2f883749ff7893",
+      "passed": true,
+      "risks": []
+    },
+    "revisions": [
+      {
+        "revision": 1,
+        "script_hash": "cf4d6c81d1af6750c857f3495e35847de95550fcdc740ce22d2f883749ff7893",
+        "scene_count": 1
+      }
+    ],
+    "tool_errors": [],
+    "warnings": [
+      "脚本明显短于目标；素材不足时应补充资料，避免无依据扩写或长时间空镜"
+    ],
+    "gaps": [],
+    "unfinished_reason": null,
+    "task_status": "completed"
+  },
+  "trace": [
+    {
+      "action": "search",
+      "args": {
+        "query": "字幕产品"
+      },
+      "observation": {
+        "materials": [
+          {
+            "approved_lines": [
+              "先看字幕功能：这款产品支持字幕。"
+            ],
+            "fact": "支持字幕",
+            "id": "P01",
+            "tags": [
+              "字幕",
+              "剪辑",
+              "产品"
+            ],
+            "version": "2026-10-01"
+          }
+        ],
+        "ok": true
+      },
+      "reason": "先检索产品事实与获准表达",
+      "step": 1
+    },
+    {
+      "action": "write",
+      "args": {
+        "scenes": [
+          {
+            "hold_seconds": 8,
+            "narration": "先看字幕功能：这款产品支持字幕。",
+            "source_id": "P01",
+            "visual": "操作演示"
+          }
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "revision": 1,
+        "scene_count": 1,
+        "script_hash": "cf4d6c81d1af6750c857f3495e35847de95550fcdc740ce22d2f883749ff7893"
+      },
+      "reason": "结合受众语速、平台画幅和风格形成首稿分镜",
+      "step": 2
+    },
+    {
+      "action": "estimate",
+      "args": {},
+      "observation": {
+        "chars_per_second": 3.5,
+        "ok": true,
+        "overrun_seconds": 0,
+        "recommended_hold_total": 22.43,
+        "scene_seconds": [
+          12.57
+        ],
+        "script_hash": "cf4d6c81d1af6750c857f3495e35847de95550fcdc740ce22d2f883749ff7893",
+        "spoken_seconds": [
+          4.57
+        ],
+        "target_seconds": 30,
+        "total_seconds": 12.57,
+        "within_limit": true
+      },
+      "reason": "估算当前版本旁白和演示画面总时长",
+      "step": 3
+    },
+    {
+      "action": "check",
+      "args": {},
+      "observation": {
+        "ok": true,
+        "passed": true,
+        "risks": [],
+        "script_hash": "cf4d6c81d1af6750c857f3495e35847de95550fcdc740ce22d2f883749ff7893"
+      },
+      "reason": "核对当前版本事实、品牌与镜头停留规则",
+      "step": 4
+    },
+    {
+      "step": 5,
+      "action": "finish",
+      "args": {},
+      "reason": "当前版本时长与规则均通过，结束",
+      "observation": {
+        "status": "completed"
+      }
+    }
+  ]
+}

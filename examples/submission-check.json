@@ -1,0 +1,14 @@
+{
+  "missing_required_files": [],
+  "key_copies_outside_local_env": [],
+  "example_has_no_key": true,
+  "local_env_ignored": true,
+  "checked_real_entry_cases": 7,
+  "technical_artifacts_checked": true,
+  "final_submission_complete": false,
+  "remaining_manual_items": [
+    "本人贡献与实际用时、个人回顾",
+    "提交时核对最终commit SHA",
+    "私有仓库评审权限（如适用）"
+  ]
+}

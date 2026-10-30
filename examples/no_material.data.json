@@ -1,0 +1,14 @@
+{
+  "materials": [],
+  "chars_per_second": 4,
+  "allowed_visuals": [
+    "产品画面",
+    "字幕展示",
+    "操作演示"
+  ],
+  "forbidden": [
+    "提升80%",
+    "保证",
+    "行业第一"
+  ]
+}

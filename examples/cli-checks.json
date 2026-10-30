@@ -1,0 +1,20 @@
+[
+  {
+    "case": "normal",
+    "status": "completed",
+    "exit_code": 0,
+    "markdown_checked": true
+  },
+  {
+    "case": "persistent_failure",
+    "status": "incomplete",
+    "exit_code": 2,
+    "markdown_checked": true
+  },
+  {
+    "case": "step_limit",
+    "status": "incomplete_step_limit",
+    "exit_code": 2,
+    "markdown_checked": true
+  }
+]

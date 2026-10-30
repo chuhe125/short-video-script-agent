@@ -1,0 +1,34 @@
+test_arbitrary_trailing_content_not_silently_accepted (test_agent.Tests.test_arbitrary_trailing_content_not_silently_accepted) ... ok
+test_audience_platform_style_change_execution (test_agent.Tests.test_audience_platform_style_change_execution) ... ok
+test_brand_violation_blocks_even_approved_line (test_agent.Tests.test_brand_violation_blocks_even_approved_line) ... ok
+test_changed_sources (test_agent.Tests.test_changed_sources) ... ok
+test_duration_revision (test_agent.Tests.test_duration_revision) ... ok
+test_edit_invalidates_checks (test_agent.Tests.test_edit_invalidates_checks) ... ok
+test_env_loader_does_not_override_shell_or_evaluate_values (test_agent.Tests.test_env_loader_does_not_override_shell_or_evaluate_values) ... ok
+test_estimate_uses_configured_speech_rate (test_agent.Tests.test_estimate_uses_configured_speech_rate) ... ok
+test_excessive_silent_padding_rejected (test_agent.Tests.test_excessive_silent_padding_rejected) ... ok
+test_impossible_duration (test_agent.Tests.test_impossible_duration) ... ok
+test_invented_claim_rejected (test_agent.Tests.test_invented_claim_rejected) ... ok
+test_markdown_export_keeps_failure_status (test_agent.Tests.test_markdown_export_keeps_failure_status) ... ok
+test_missing (test_agent.Tests.test_missing) ... ok
+test_missing_source_rejected (test_agent.Tests.test_missing_source_rejected) ... ok
+test_model_cannot_skip_current_checks (test_agent.Tests.test_model_cannot_skip_current_checks) ... ok
+test_model_failure_retains_partial_results (test_agent.Tests.test_model_failure_retains_partial_results) ... ok
+test_no_material (test_agent.Tests.test_no_material) ... ok
+test_normal (test_agent.Tests.test_normal) ... ok
+test_parallel_calls_are_logged_but_only_first_is_selected (test_agent.Tests.test_parallel_calls_are_logged_but_only_first_is_selected) ... ok
+test_persistent_failure_preserves_candidate_without_success (test_agent.Tests.test_persistent_failure_preserves_candidate_without_success) ... ok
+test_provider_final_marker_rejected_and_raw_preserved (test_agent.Tests.test_provider_final_marker_rejected_and_raw_preserved) ... ok
+test_query_rewrite (test_agent.Tests.test_query_rewrite) ... ok
+test_remote_adapter_request_and_response_contract (test_agent.Tests.test_remote_adapter_request_and_response_contract) ... ok
+test_revised_script_is_useful_length (test_agent.Tests.test_revised_script_is_useful_length) ... ok
+test_sources_and_total (test_agent.Tests.test_sources_and_total) ... ok
+test_step_limit_keeps_explicit_reason (test_agent.Tests.test_step_limit_keeps_explicit_reason) ... ok
+test_timeline_matches_estimates (test_agent.Tests.test_timeline_matches_estimates) ... ok
+test_tool_failure (test_agent.Tests.test_tool_failure) ... ok
+test_tool_trace_is_frozen_after_rewrite (test_agent.Tests.test_tool_trace_is_frozen_after_rewrite) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.019s
+
+OK

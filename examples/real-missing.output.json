@@ -1,0 +1,28 @@
+{
+  "mode": "real",
+  "status": "needs_input",
+  "missing": [
+    "audience"
+  ],
+  "trace": [],
+  "result": {
+    "title": null,
+    "audience": null,
+    "platform": "短视频",
+    "style": "简洁",
+    "editorial_brief": null,
+    "scenes": [],
+    "source_ids": [],
+    "sources": [],
+    "duration_check": null,
+    "rule_check": null,
+    "revisions": [],
+    "tool_errors": [],
+    "warnings": [],
+    "gaps": [
+      "需要可检索的产品事实或素材来源"
+    ],
+    "unfinished_reason": "需要可检索的产品事实或素材来源"
+  },
+  "error": null
+}

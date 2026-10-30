@@ -1,0 +1,273 @@
+{
+  "mode": "mock",
+  "model": null,
+  "status": "completed",
+  "error": null,
+  "result": {
+    "title": "产品功能演示",
+    "audience": "新手创作者",
+    "platform": "短视频",
+    "style": "简洁",
+    "scenes": [
+      {
+        "source_id": "P01",
+        "narration": "支持字幕",
+        "visual": "字幕展示",
+        "hold_seconds": 0,
+        "index": 1,
+        "estimated_seconds": 1.0
+      },
+      {
+        "source_id": "P02",
+        "narration": "可编辑字幕样式",
+        "visual": "字幕展示",
+        "hold_seconds": 0,
+        "index": 2,
+        "estimated_seconds": 1.75
+      },
+      {
+        "source_id": "P03",
+        "narration": "可导出视频",
+        "visual": "字幕展示",
+        "hold_seconds": 0,
+        "index": 3,
+        "estimated_seconds": 1.25
+      }
+    ],
+    "source_ids": [
+      "P01",
+      "P02",
+      "P03"
+    ],
+    "sources": [
+      {
+        "id": "P01",
+        "tags": [
+          "字幕",
+          "剪辑",
+          "产品"
+        ],
+        "fact": "支持字幕",
+        "version": "2026-10-01"
+      },
+      {
+        "id": "P02",
+        "tags": [
+          "字幕",
+          "剪辑",
+          "产品"
+        ],
+        "fact": "可编辑字幕样式",
+        "version": "2026-10-01"
+      },
+      {
+        "id": "P03",
+        "tags": [
+          "字幕",
+          "剪辑",
+          "产品"
+        ],
+        "fact": "可导出视频",
+        "version": "2026-10-01"
+      }
+    ],
+    "duration_check": {
+      "ok": true,
+      "script_hash": "66c1a2978950c12449335a474f88f055899aab1880c116599594cbfb009d075a",
+      "scene_seconds": [
+        1.0,
+        1.75,
+        1.25
+      ],
+      "total_seconds": 4.0,
+      "target_seconds": 30,
+      "within_limit": true
+    },
+    "rule_check": {
+      "ok": true,
+      "script_hash": "66c1a2978950c12449335a474f88f055899aab1880c116599594cbfb009d075a",
+      "passed": true,
+      "risks": []
+    },
+    "tool_errors": [],
+    "unfinished_reason": null
+  },
+  "trace": [
+    {
+      "action": "search",
+      "args": {
+        "query": "字幕产品"
+      },
+      "observation": {
+        "materials": [
+          {
+            "fact": "支持字幕",
+            "id": "P01",
+            "tags": [
+              "字幕",
+              "剪辑",
+              "产品"
+            ],
+            "version": "2026-10-01"
+          },
+          {
+            "fact": "可编辑字幕样式",
+            "id": "P02",
+            "tags": [
+              "字幕",
+              "剪辑",
+              "产品"
+            ],
+            "version": "2026-10-01"
+          },
+          {
+            "fact": "可导出视频",
+            "id": "P03",
+            "tags": [
+              "字幕",
+              "剪辑",
+              "产品"
+            ],
+            "version": "2026-10-01"
+          }
+        ],
+        "ok": true
+      },
+      "reason": "先检索产品事实",
+      "step": 1
+    },
+    {
+      "action": "write",
+      "args": {
+        "scenes": [
+          {
+            "hold_seconds": 12,
+            "narration": "支持字幕",
+            "source_id": "P01",
+            "visual": "产品画面"
+          },
+          {
+            "hold_seconds": 12,
+            "narration": "可编辑字幕样式",
+            "source_id": "P02",
+            "visual": "产品画面"
+          },
+          {
+            "hold_seconds": 12,
+            "narration": "可导出视频",
+            "source_id": "P03",
+            "visual": "产品画面"
+          }
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "scene_count": 3,
+        "script_hash": "06a6b98f3038efb86bae4f594dc43bd18e6ba5396d5b5a44fa1da2c2b0cb3fe9"
+      },
+      "reason": "依据检索原文形成首稿分镜",
+      "step": 2
+    },
+    {
+      "action": "estimate",
+      "args": {},
+      "observation": {
+        "ok": true,
+        "scene_seconds": [
+          13.0,
+          13.75,
+          13.25
+        ],
+        "script_hash": "06a6b98f3038efb86bae4f594dc43bd18e6ba5396d5b5a44fa1da2c2b0cb3fe9",
+        "target_seconds": 30,
+        "total_seconds": 40.0,
+        "within_limit": false
+      },
+      "reason": "估算当前版本分镜时长",
+      "step": 3
+    },
+    {
+      "action": "check",
+      "args": {},
+      "observation": {
+        "ok": true,
+        "passed": true,
+        "risks": [],
+        "script_hash": "06a6b98f3038efb86bae4f594dc43bd18e6ba5396d5b5a44fa1da2c2b0cb3fe9"
+      },
+      "reason": "核对当前版本事实与品牌规则",
+      "step": 4
+    },
+    {
+      "action": "write",
+      "args": {
+        "scenes": [
+          {
+            "hold_seconds": 0,
+            "narration": "支持字幕",
+            "source_id": "P01",
+            "visual": "字幕展示"
+          },
+          {
+            "hold_seconds": 0,
+            "narration": "可编辑字幕样式",
+            "source_id": "P02",
+            "visual": "字幕展示"
+          },
+          {
+            "hold_seconds": 0,
+            "narration": "可导出视频",
+            "source_id": "P03",
+            "visual": "字幕展示"
+          }
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "scene_count": 3,
+        "script_hash": "66c1a2978950c12449335a474f88f055899aab1880c116599594cbfb009d075a"
+      },
+      "reason": "观察到超时长，删除静默画面并保留可容纳的事实",
+      "step": 5
+    },
+    {
+      "action": "estimate",
+      "args": {},
+      "observation": {
+        "ok": true,
+        "scene_seconds": [
+          1.0,
+          1.75,
+          1.25
+        ],
+        "script_hash": "66c1a2978950c12449335a474f88f055899aab1880c116599594cbfb009d075a",
+        "target_seconds": 30,
+        "total_seconds": 4.0,
+        "within_limit": true
+      },
+      "reason": "估算当前版本分镜时长",
+      "step": 6
+    },
+    {
+      "action": "check",
+      "args": {},
+      "observation": {
+        "ok": true,
+        "passed": true,
+        "risks": [],
+        "script_hash": "66c1a2978950c12449335a474f88f055899aab1880c116599594cbfb009d075a"
+      },
+      "reason": "核对当前版本事实与品牌规则",
+      "step": 7
+    },
+    {
+      "step": 8,
+      "action": "finish",
+      "args": {},
+      "reason": "当前版本时长与规则均通过，结束",
+      "observation": {
+        "status": "completed"
+      }
+    }
+  ]
+}

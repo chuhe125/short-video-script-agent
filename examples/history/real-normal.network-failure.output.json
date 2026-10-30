@@ -1,0 +1,70 @@
+{
+  "mode": "real",
+  "model": "deepseek-flash",
+  "status": "model_error",
+  "error": "URLError",
+  "input": {
+    "theme": "字幕产品",
+    "audience": "新手创作者",
+    "platform": "短视频",
+    "target_seconds": 60,
+    "style": "简洁"
+  },
+  "execution": {
+    "started_at_utc": "2026-10-30T09:14:57.680260+00:00",
+    "max_steps": 16,
+    "decisions": 1,
+    "tool_calls": 0,
+    "fail_once": null,
+    "fail_always": null,
+    "endpoint": "https://api.deepseek.com",
+    "model_calls": []
+  },
+  "result": {
+    "title": "产品功能演示",
+    "audience": "新手创作者",
+    "platform": "短视频",
+    "style": "简洁",
+    "editorial_brief": {
+      "chars_per_second": 3.5,
+      "frame": "9:16",
+      "preferred_visual": "操作演示",
+      "reading_note": "逐项展示，字幕留出阅读时间",
+      "editing_note": "干净切换，突出单一功能",
+      "title": "产品功能演示",
+      "initial_hold_seconds": 8,
+      "max_hold_seconds": 10,
+      "desired_fill_ratio": 0.9,
+      "allowed_visuals": [
+        "产品画面",
+        "字幕展示",
+        "操作演示"
+      ],
+      "voiceover_method": "按字符数粗估，未实际配音"
+    },
+    "scenes": [],
+    "source_ids": [],
+    "sources": [],
+    "duration_check": null,
+    "rule_check": null,
+    "revisions": [],
+    "tool_errors": [],
+    "warnings": [],
+    "gaps": [
+      "需要可检索的产品事实或素材来源"
+    ],
+    "unfinished_reason": "模型调用或响应失败，任务未完成",
+    "task_status": "model_error"
+  },
+  "trace": [
+    {
+      "step": 1,
+      "action": "model_error",
+      "args": {},
+      "reason": "模型未返回可执行动作，停止并保留已有结果",
+      "observation": {
+        "error": "URLError"
+      }
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "mode": "real",
+  "model": "deepseek-flash",
+  "status": "model_error",
+  "error": "JSONDecodeError",
+  "input": {
+    "theme": "字幕产品",
+    "audience": "新手创作者",
+    "platform": "短视频",
+    "target_seconds": 60,
+    "style": "简洁"
+  },
+  "execution": {
+    "started_at_utc": "2026-10-30T09:16:31.097096+00:00",
+    "max_steps": 16,
+    "decisions": 4,
+    "tool_calls": 3,
+    "fail_once": null,
+    "fail_always": null,
+    "endpoint": "https://api.deepseek.com",
+    "model_calls": [
+      {
+        "response_id": "d316d3a4-6f80-4b8a-adde-58902659b087",
+        "served_model": "deepseek-flash",
+        "finish_reason": "stop",
+        "usage": {
+          "prompt_tokens": 618,
+          "completion_tokens": 65,
+          "total_tokens": 683,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 618
+        }
+      },
+      {
+        "response_id": "4d42eaa2-2119-4ec8-81bd-9d9623231bca",
+        "served_model": "deepseek-flash",
+        "finish_reason": "stop",
+        "usage": {
+          "prompt_tokens": 714,
+          "completion_tokens": 51,
+          "total_tokens": 765,
+          "prompt_tokens_details": {
+            "cached_tokens": 512
+          },
+          "prompt_cache_hit_tokens": 512,
+          "prompt_cache_miss_tokens": 202
+        }
+      },
+      {
+        "response_id": "3c523e26-a6da-4206-9457-7992904722d7",
+        "served_model": "deepseek-flash",
+        "finish_reason": "stop",
+        "usage": {
+          "prompt_tokens": 954,
+          "completion_tokens": 135,
+          "total_tokens": 1089,
+          "prompt_tokens_details": {
+            "cached_tokens": 640
+          },
+          "prompt_cache_hit_tokens": 640,
+          "prompt_cache_miss_tokens": 314
+        }
+      },
+      {
+        "response_id": "60670965-bc0c-4757-9221-369a0243f4a6",
+        "served_model": "deepseek-flash",
+        "finish_reason": "stop",
+        "usage": {
+          "prompt_tokens": 1193,
+          "completion_tokens": 110,
+          "total_tokens": 1303,
+          "prompt_tokens_details": {
+            "cached_tokens": 896
+          },
+          "prompt_cache_hit_tokens": 896,
+          "prompt_cache_miss_tokens": 297
+        }
+      }
+    ]
+  },
+  "result": {
+    "title": "产品功能演示",
+    "audience": "新手创作者",
+    "platform": "短视频",
+    "style": "简洁",
+    "editorial_brief": {
+      "chars_per_second": 3.5,
+      "frame": "9:16",
+      "preferred_visual": "操作演示",
+      "reading_note": "逐项展示，字幕留出阅读时间",
+      "editing_note": "干净切换，突出单一功能",
+      "title": "产品功能演示",
+      "initial_hold_seconds": 8,
+      "max_hold_seconds": 10,
+      "desired_fill_ratio": 0.9,
+      "allowed_visuals": [
+        "产品画面",
+        "字幕展示",
+        "操作演示"
+      ],
+      "voiceover_method": "按字符数粗估，未实际配音"
+    },
+    "scenes": [
+      {
+        "source_id": "P01",
+        "narration": "先看字幕功能：这款产品支持字幕。",
+        "visual": "操作演示",
+        "hold_seconds": 8,
+        "index": 1,
+        "estimated_seconds": null,
+        "start_seconds": null,
+        "end_seconds": null,
+        "caption": "支持字幕",
+        "source_version": "2026-10-01",
+        "source_quote": "支持字幕",
+        "shot_note": "9:16；逐项展示，字幕留出阅读时间；干净切换，突出单一功能"
+      },
+      {
+        "source_id": "P02",
+        "narration": "接着看字幕样式，这里可以编辑字幕样式。",
+        "visual": "操作演示",
+        "hold_seconds": 8,
+        "index": 2,
+        "estimated_seconds": null,
+        "start_seconds": null,
+        "end_seconds": null,
+        "caption": "可编辑字幕样式",
+        "source_version": "2026-10-01",
+        "source_quote": "可编辑字幕样式",
+        "shot_note": "9:16；逐项展示，字幕留出阅读时间；干净切换，突出单一功能"
+      },
+      {
+        "source_id": "P03",
+        "narration": "最后看导出功能：这款产品可以导出视频。",
+        "visual": "操作演示",
+        "hold_seconds": 8,
+        "index": 3,
+        "estimated_seconds": null,
+        "start_seconds": null,
+        "end_seconds": null,
+        "caption": "可导出视频",
+        "source_version": "2026-10-01",
+        "source_quote": "可导出视频",
+        "shot_note": "9:16；逐项展示，字幕留出阅读时间；干净切换，突出单一功能"
+      }
+    ],
+    "source_ids": [
+      "P01",
+      "P02",
+      "P03"
+    ],
+    "sources": [
+      {
+        "id": "P01",
+        "tags": [
+          "字幕",
+          "剪辑",
+          "产品"
+        ],
+        "fact": "支持字幕",
+        "approved_lines": [
+          "先看字幕功能：这款产品支持字幕。"
+        ],
+        "version": "2026-10-01"
+      },
+      {
+        "id": "P02",
+        "tags": [
+          "字幕",
+          "剪辑",
+          "产品"
+        ],
+        "fact": "可编辑字幕样式",
+        "approved_lines": [
+          "接着看字幕样式，这里可以编辑字幕样式。"
+        ],
+        "version": "2026-10-01"
+      },
+      {
+        "id": "P03",
+        "tags": [
+          "字幕",
+          "剪辑",
+          "产品"
+        ],
+        "fact": "可导出视频",
+        "approved_lines": [
+          "最后看导出功能：这款产品可以导出视频。"
+        ],
+        "version": "2026-10-01"
+      }
+    ],
+    "duration_check": null,
+    "rule_check": null,
+    "revisions": [
+      {
+        "revision": 1,
+        "script_hash": "879a02511e51faae84cffc77b3f6cbc3b0879dd61b1fc376d5510a1f95b1ac9f",
+        "scene_count": 3
+      }
+    ],
+    "tool_errors": [
+      {
+        "action": "search",
+        "args": {
+          "query": "字幕产品 功能 操作演示 新手创作者",
+          "reason": "需要先获取可引用的事实与已批准文案及版本ID，才能撰写分镜脚本"
+        },
+        "result": {
+          "ok": false,
+          "error": "invalid_action_or_arguments"
+        }
+      }
+    ],
+    "warnings": [],
+    "gaps": [
+      "当前版本尚未完成时长估算",
+      "当前版本尚未完成规则检查"
+    ],
+    "unfinished_reason": "模型调用或响应失败，任务未完成",
+    "task_status": "model_error"
+  },
+  "trace": [
+    {
+      "action": "search",
+      "args": {
+        "query": "字幕产品 功能 操作演示 新手创作者",
+        "reason": "需要先获取可引用的事实与已批准文案及版本ID，才能撰写分镜脚本"
+      },
+      "observation": {
+        "error": "invalid_action_or_arguments",
+        "ok": false
+      },
+      "reason": "需要先获取可引用的事实与已批准文案及版本ID，才能撰写分镜脚本",
+      "step": 1
+    },
+    {
+      "action": "search",
+      "args": {
+        "query": "字幕产品 功能 操作演示 新手创作者"
+      },
+      "observation": {
+        "materials": [
+          {
+            "approved_lines": [
+              "先看字幕功能：这款产品支持字幕。"
+            ],
+            "fact": "支持字幕",
+            "id": "P01",
+            "tags": [
+              "字幕",
+              "剪辑",
+              "产品"
+            ],
+            "version": "2026-10-01"
+          },
+          {
+            "approved_lines": [
+              "接着看字幕样式，这里可以编辑字幕样式。"
+            ],
+            "fact": "可编辑字幕样式",
+            "id": "P02",
+            "tags": [
+              "字幕",
+              "剪辑",
+              "产品"
+            ],
+            "version": "2026-10-01"
+          },
+          {
+            "approved_lines": [
+              "最后看导出功能：这款产品可以导出视频。"
+            ],
+            "fact": "可导出视频",
+            "id": "P03",
+            "tags": [
+              "字幕",
+              "剪辑",
+              "产品"
+            ],
+            "version": "2026-10-01"
+          }
+        ],
+        "ok": true
+      },
+      "reason": "首次检索因无效参数失败，按规则用同一查询重试一次以获取可引用事实、approved_lines 和版本ID",
+      "step": 2
+    },
+    {
+      "action": "write",
+      "args": {
+        "scenes": [
+          {
+            "hold_seconds": 8,
+            "narration": "先看字幕功能：这款产品支持字幕。",
+            "source_id": "P01",
+            "visual": "操作演示"
+          },
+          {
+            "hold_seconds": 8,
+            "narration": "接着看字幕样式，这里可以编辑字幕样式。",
+            "source_id": "P02",
+            "visual": "操作演示"
+          },
+          {
+            "hold_seconds": 8,
+            "narration": "最后看导出功能：这款产品可以导出视频。",
+            "source_id": "P03",
+            "visual": "操作演示"
+          }
+        ]
+      },
+      "observation": {
+        "ok": true,
+        "revision": 1,
+        "scene_count": 3,
+        "script_hash": "879a02511e51faae84cffc77b3f6cbc3b0879dd61b1fc376d5510a1f95b1ac9f"
+      },
+      "reason": "仅有 P01-P03 三条已批准事实，逐项对应操作演示，narration 严格采用 approved_lines",
+      "step": 3
+    },
+    {
+      "step": 4,
+      "action": "model_error",
+      "args": {},
+      "reason": "模型未返回可执行动作，停止并保留已有结果",
+      "observation": {
+        "error": "JSONDecodeError"
+      }
+    }
+  ]
+}
